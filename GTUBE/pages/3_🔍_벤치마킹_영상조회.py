@@ -16,7 +16,7 @@ st.set_page_config(layout="wide")
 st.title("🔍 벤치마킹 채널 쇼츠 영상 조회")
 
 load_dotenv()
-API_KEY = os.getenv("YOUTUBE_API_KEY")
+API_KEY = st.secrets["YOUTUBE_API_KEY"]
 youtube_api = build("youtube", "v3", developerKey=API_KEY)
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data")
