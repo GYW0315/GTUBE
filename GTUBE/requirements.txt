@@ -1,0 +1,12 @@
+google-api-python-client
+io
+pandas
+python-dotenv
+selenium
+streamlit
+urllib
+webdriver_manager
+openpyxl
+requests
+beautifulsoup4
+webdriver-manager
