@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 # 🔐 환경 변수에서 API 키 불러오기
 load_dotenv()
-API_KEY = os.getenv("YOUTUBE_API_KEY")
+API_KEY = st.secrets["YOUTUBE_API_KEY"]
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data")
 EXCEL_FILE = os.path.join(DATA_PATH, "benchmark_channels.xlsx")
