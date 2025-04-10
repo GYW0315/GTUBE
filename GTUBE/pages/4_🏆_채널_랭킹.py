@@ -11,7 +11,7 @@ st.title("🏆 경쟁 채널 랭킹 분석")
 
 # 🔐 .env에서 API 키 로드
 load_dotenv()
-API_KEY = os.getenv("YOUTUBE_API_KEY")
+API_KEY = st.secrets["YOUTUBE_API_KEY"]
 
 # 파일 경로 상수
 COMPETITOR_FILE = "data/competitor_channels.xlsx"
